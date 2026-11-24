@@ -1,0 +1,15 @@
+{
+  // Multi-root workspace. Clone the other repos as siblings of this repo
+  // and add a folder entry for each one, for example:
+  //   { "name": "wortlaut-indexer", "path": "../wortlaut-indexer" }
+  "folders": [
+    { "name": "wortlaut (meta)", "path": "." },
+    { "name": "wortlaut-indexer", "path": "../wortlaut-indexer" },
+    { "name": "wortlaut-infra", "path": "../wortlaut-infra" }
+  ],
+  "settings": {
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true
+  }
+}
