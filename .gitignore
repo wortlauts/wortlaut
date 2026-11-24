@@ -1,0 +1,15 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+
+# Local settings (VS Code settings live in the workspace file)
+.vscode/
+*.local
+
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
