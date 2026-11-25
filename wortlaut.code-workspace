@@ -6,6 +6,7 @@
     { "name": "wortlaut (meta)", "path": "." },
     { "name": "wortlaut-indexer", "path": "../wortlaut-indexer" },
     { "name": "wortlaut-api", "path": "../wortlaut-api" },
+    { "name": "wortlaut-frontend", "path": "../wortlaut-frontend" },
     { "name": "wortlaut-infra", "path": "../wortlaut-infra" }
   ],
   "settings": {
