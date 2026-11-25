@@ -25,6 +25,7 @@ Rule of thumb: one repo equals one deployable artifact with its own release cade
 - [docs/adr](docs/adr): architecture decision records
 - [docs/roadmap.md](docs/roadmap.md): milestones for phase 1 and what comes after
 - [docs/data-sources.md](docs/data-sources.md): data sources, licences and legal notes
+- [brand](brand): corporate design with logos, icons, colours, fonts and usage rules (see [brand/README.md](brand/README.md))
 
 ## Working on all repos at once
 

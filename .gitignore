@@ -13,3 +13,7 @@ Thumbs.db
 !.env.example
 *.pem
 *.key
+
+# Brand kit rebuild artefacts
+brand/source/node_modules/
+brand/source/__pycache__/
