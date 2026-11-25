@@ -5,6 +5,7 @@
   "folders": [
     { "name": "wortlaut (meta)", "path": "." },
     { "name": "wortlaut-indexer", "path": "../wortlaut-indexer" },
+    { "name": "wortlaut-api", "path": "../wortlaut-api" },
     { "name": "wortlaut-infra", "path": "../wortlaut-infra" }
   ],
   "settings": {
