@@ -10,3 +10,4 @@ Each ADR has the sections **Status**, **Context**, **Decision** and **Consequenc
 | [0002](0002-elasticsearch-only-in-phase-1.md) | Elasticsearch only in phase 1 | accepted |
 | [0003](0003-english-technical-german-ui.md) | English for everything technical, German for the UI | accepted |
 | [0004](0004-speech-document-model.md) | Speech document model | accepted |
+| [0005](0005-first-deployment-on-a-raspberry-pi.md) | First deployment on a Raspberry Pi, one environment | accepted |

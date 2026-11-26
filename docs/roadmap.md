@@ -12,7 +12,7 @@ Phase 1 ends with a live search. Each milestone ends with something that can be 
 | 4 | **M1, data in the index** | indexer with parser tests, index template `speeches-v1`, bulk import, alias `speeches`; speeches searchable in Kibana |
 | 5 | **M2, API** | search and detail endpoints, Swagger UI, Testcontainers tests, CI with image to ghcr.io |
 | 6 | **M3, frontend** | search page, hits with highlights, filters, trend chart, client generated from `openapi.json` |
-| 7 | **M4, live** | first deployment on the owner's own server with Compose and reverse proxy, domain, HTTPS, licence and source page |
+| 7 | **M4, live** | first deployment on the owner's own server with Compose, domain, HTTPS, licence and source page |
 
 In every repo from day one: GitHub Actions for build and test, Dependabot or Renovate, semver tags, and a README that explains what the repo is and how to run it locally.
 
