@@ -4,7 +4,7 @@ Wortlaut ("exact wording") is a search engine over German Bundestag speeches: ty
 
 This repository is the **meta repo**. It holds the overview, architecture, decisions (ADRs), roadmap and a VS Code workspace. The code lives in separate repos under the [`wortlauts`](https://github.com/wortlauts) organisation.
 
-> **Status (2026-11-24):** planning is done, phase 1 is starting. Nothing is deployed yet. The repositories are private for now.
+> **Status (2026-11-28):** phase 1 is live. The speeches of legislative periods 19 to 21 are searchable with highlights, filters and a trend chart. Still open before a public announcement: legal pages, licences and the name check, see the [project board](https://github.com/orgs/wortlauts/projects/1).
 
 ## Repositories
 

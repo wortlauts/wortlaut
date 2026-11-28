@@ -31,6 +31,25 @@ There is no shared code package between the repos. The contracts are files, and 
 - The API reads only (read-only role).
 - The frontend talks only to the API.
 
+## Deployment
+
+`wortlaut-infra` is the single source of truth for what runs in production: the Compose stack, the image versions and the encrypted secrets. Releases flow in one direction:
+
+```text
+ application repo                 wortlaut-infra                host
+ Deploy to PROD  --(tag)-->  compose/prod/versions.env  --(pull)-->  deploy.sh
+ CI, arm64 image             pull request protected                  decrypts secrets,
+ to ghcr.io                  main, deploy key pins                   compose up, result
+                                                                      reported back
+```
+
+- Each application repo has a manual **Deploy to PROD** workflow. It runs the CI, publishes an image tagged `sha-<commit>` and commits that tag to `compose/prod/versions.env` in the infra repo.
+- The host pulls the infra repo on a timer and runs `compose/prod/deploy.sh`. Nothing connects into the host, and the host holds no GitHub credentials besides a key that only writes the result.
+- Secrets are stored in the infra repo encrypted with SOPS and age. The host decrypts them into memory for the duration of a deployment.
+- After a deployment the host reports the result as an info commit on the branch `prod-status`, which turns into the commit status `deploy/prod` and into the result of the **Deploy to PROD** run.
+
+The decisions behind this are ADR [0005](adr/0005-first-deployment-on-a-raspberry-pi.md) and [0006](adr/0006-pull-based-deployment-from-the-infra-repo.md).
+
 ## Versioning
 
 - Semver tags per repo.
